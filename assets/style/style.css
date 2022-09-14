@@ -1,0 +1,28 @@
+html {
+    min-height: 100vh;
+    background-image: url(../img/bg-repeat.jpg);
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.description {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 378px;
+    background-color: #fff;
+}
