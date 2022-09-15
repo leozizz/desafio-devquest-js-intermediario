@@ -1,19 +1,39 @@
 html {
     min-height: 100vh;
     background-image: url(../img/bg-repeat.jpg);
+    background-size: 100% 100%;
 }
 
-main {
+/* main {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+} */
+
+main {
+    height: 100vh;
+    margin: 0 200px;
+    display: flex;
+    align-items: center;
 }
 
 .description {
-    margin: 0 auto;
+    margin-right: 60px;
     display: flex;
     flex-direction: column;
+    color: #fff;
+}
+
+.description h1 {
+    margin-bottom: 11px;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.description p {
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .form {
@@ -23,6 +43,41 @@ main {
     align-items: center;
     justify-content: center;
     width: 340px;
-    height: 378px;
+    padding: 20px;
     background-color: #fff;
+}
+
+.form input, textarea {
+    padding: 8px;
+    width: 298px;
+    height: 35px;
+    border: 1px #000 solid;
+    border-radius: 5px;
+}
+
+input, textarea::placeholder {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#message {
+    height: 100px;
+    resize: none;
+}
+
+#submit {
+    margin-top: 45px;
+    margin-bottom: 0;
+    height: 40px;
+    background-color: #3CCC87;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error {
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #F52E2E;
 }
