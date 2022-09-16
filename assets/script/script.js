@@ -4,6 +4,13 @@ const phoneInput = document.querySelector("#phone")
 const messageInput = document.querySelector("#message")
 const submitButton = document.querySelector("#submit")
 
+const inputs = [
+                    nameInput.value,
+                    emailInput.value,
+                    phoneInput.value,
+                    messageInput.value
+]
+
 const errorBorder = [
                         nameInput,
                         emailInput,
@@ -12,24 +19,20 @@ const errorBorder = [
 ]
 
 const errorMessage = document.querySelectorAll(".error")
-console.log(errorMessage)
 
 submitButton.addEventListener("click", function() {
-    console.log(nameInput)
-    const nameValue = nameInput.value
-    const emailValue = emailInput.value
-    const phoneValue = phoneInput.value
-    const messageValue = messageInput.value
-    console.log(nameValue)
+    checkInputs()
+    })
 
-    if (nameValue === "" || emailValue === "" || phoneValue === "" || messageValue === ""){
-        errorAlert()
-    }
-})
+function checkInputs() {
+    inputs.forEach(function(item){
+        if (item === ""){
+            errorAlert()
+        }
+    })
+}
 
 function errorAlert() {
-
-    nameInput.style.borderColor = "red"
 
     errorBorder.forEach(function (item) {
         item.style.borderColor = "#F52E2E"
@@ -39,3 +42,9 @@ function errorAlert() {
         item.textContent = "campo obrigatório"
     })
 }
+
+inputs.forEach(function(item) {
+    item.addEventListener("input", function() {
+        console.log(preencheu)
+    })
+})
