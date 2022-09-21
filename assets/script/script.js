@@ -3,6 +3,7 @@ const emailInput = document.querySelector("#email")
 const phoneInput = document.querySelector("#phone")
 const messageInput = document.querySelector("#message")
 const submitButton = document.querySelector("#submit")
+const errorMessage = document.querySelectorAll(".error")
 
 const inputValues = [
                     nameInput.value,
@@ -18,8 +19,6 @@ const inputs = [
                         messageInput
 ]
 
-const errorMessage = document.querySelectorAll(".error")
-
 changeInputBorder()
 
 submitButton.addEventListener("click", function() {
@@ -27,6 +26,7 @@ submitButton.addEventListener("click", function() {
     checkInputValues()
     })
 
+//Check if inputs are empty
 function checkInputValues() {
     inputValues.forEach(function(item){
         if (item === ""){
@@ -35,6 +35,8 @@ function checkInputValues() {
     })
 }
 
+//Sets the border color according to the situation.
+//If filled = green. Else = keep the color black.
 function changeInputBorder() {
     inputs.forEach (function (item){
         item.addEventListener('input', event => {
@@ -48,6 +50,9 @@ function changeInputBorder() {
     })
 }
 
+
+//If the inputs are empty displays an error message.
+//The divs in errorMessage[] receive the error text.
 function errorAlert() {
 
     inputs.forEach(function (item) {
