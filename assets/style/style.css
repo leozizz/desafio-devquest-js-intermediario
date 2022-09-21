@@ -61,6 +61,10 @@ textarea::placeholder {
     resize: none;
 }
 
+.form p {
+    font-size: 1.5rem;
+}
+
 #submit {
     margin-top: 45px;
     margin-bottom: 0;
