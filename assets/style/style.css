@@ -4,13 +4,6 @@ html {
     background-size: 100% 100%;
 }
 
-/* main {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-} */
-
 main {
     height: 100vh;
     margin: 0 200px;
