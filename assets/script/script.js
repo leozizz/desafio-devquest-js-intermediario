@@ -22,7 +22,7 @@ const inputs = [
 changeInputBorder()
 
 submitButton.addEventListener("click", function(e) {
-    e.preventDefault
+    e.preventDefault()
 
     checkInputValues()
     })
