@@ -27,9 +27,12 @@ Users should be able to:
 
 Below are some previews of the form with validation indications and in different screen sizes.
 
-#### Desktop preview
+#### Desktop Preview
+![Desktop Preview](./assets/readme/desktop-preview.png)
 
-#### Mobile preview
+
+#### Mobile Preview
+![Mobile Preview](./assets/readme/mobile-preview.png)
 
 ## Author
 
