@@ -28,11 +28,11 @@ Users should be able to:
 Below are some previews of the form with validation indications and in different screen sizes.
 
 #### Desktop Preview
-![Desktop Preview](./assets/readme/desktop-preview.png)
+![Desktop Preview](./assets/readme/desktop-preview.gif)
 
 
 #### Mobile Preview
-![Mobile Preview](./assets/readme/mobile-preview.png)
+![Mobile Preview](./assets/readme/mobile-preview.gif)
 
 ## Author
 
