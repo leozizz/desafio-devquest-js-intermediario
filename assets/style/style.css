@@ -41,6 +41,7 @@ main {
 }
 
 .form input, textarea {
+    margin: 0;
     padding: 8px;
     width: 298px;
     height: 35px;
@@ -75,9 +76,19 @@ textarea::placeholder {
     cursor: pointer;
 }
 
-.error {
+.form-control {
     margin-bottom: 15px;
     font-size: 0.8rem;
     font-weight: 400;
+    visibility: hidden;
+    margin-bottom: 15px;
+}
+
+.form-control.error {
     color: #F52E2E;
+    visibility: visible;
+}
+
+.form-control.success {
+    visibility: hidden;
 }

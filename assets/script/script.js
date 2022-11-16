@@ -1,27 +1,34 @@
 const inputs = document.querySelectorAll(".input")
 
-let error = document.querySelectorAll(".error")
+let formControl = document.querySelectorAll(".form-control")
 
 const submitButton = document.querySelector('#submit')
 
 submitButton.addEventListener("click", function(e) {
     e.preventDefault()
 
-    errorAlert ()
+    test()
 })
 
-function errorAlert() {
+function test() {
     inputs.forEach(function (item) {
         if (item.value === "") {
-            item.style.borderColor = "red"
-            errorMessage()
+            errorAlert(item)
         } else {
-            item.style.borderColor = "green"
+            successAlert(item)
         }
     })}
 
-function errorMessage() {
-    error.forEach(function (item) {
-        item.textContent = "Campo obrigatório"
+function errorAlert(item) {
+    item.style.borderColor = "#F52E2E"
+    formControl.forEach(function (item) {
+        item.className = "form-control error"
+    })
+}
+
+function successAlert(item) {
+    item.style.borderColor = "#00C22B"
+    formControl.forEach(function (item) {
+        item.className = "form-control success"
     })
 }
