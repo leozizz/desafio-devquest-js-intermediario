@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Form using JavaScript](https://leozizz.github.io/desafio-devquest-js-intermediario/)
+- Live Site URL: [Form using JavaScript](https://leozizz.github.io/form-using-javascript-validation/)
 
 ### Preview
 
