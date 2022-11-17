@@ -4,11 +4,17 @@
     background-size: 100% 100%;
 }
 
-main {
+body {
     height: 100vh;
-    margin: 0 200px;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .description {
@@ -70,6 +76,7 @@ textarea::placeholder {
     margin-top: 45px;
     margin-bottom: 0;
     height: 40px;
+    color: #fff;
     background-color: #3CCC87;
     border: none;
     border-radius: 5px;

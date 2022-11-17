@@ -7,10 +7,10 @@ const submitButton = document.querySelector('#submit')
 submitButton.addEventListener("click", function(e) {
     e.preventDefault()
 
-    test()
+    checkInputs()
 })
 
-function test() {
+function checkInputs() {
     inputs.forEach(function (item) {
         if (item.value === "") {
             errorAlert(item)
