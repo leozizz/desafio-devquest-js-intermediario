@@ -15,6 +15,7 @@ function checkInputs() {
         if (item.value === "") {
             errorAlert(item)
         } else {
+            console.log(item, item.value)
             successAlert(item)
         }
     })}
