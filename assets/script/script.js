@@ -1,6 +1,6 @@
-const inputs = document.querySelectorAll(".input")
+const inputs = document.querySelectorAll(".user-input")
 
-let formControl = document.querySelectorAll(".form-control")
+let alert = document.querySelectorAll(".alert")
 
 const submitButton = document.querySelector('#submit')
 
@@ -11,25 +11,20 @@ submitButton.addEventListener("click", function(e) {
 })
 
 function checkInputs() {
-    inputs.forEach(function (item) {
+    inputs.forEach(function (item, index) {
         if (item.value === "") {
             errorAlert(item)
+            alert[index].className = "alert error"
         } else {
-            console.log(item, item.value)
             successAlert(item)
+            alert[index].className = "alert success"
         }
     })}
 
 function errorAlert(item) {
     item.style.borderColor = "#F52E2E"
-    formControl.forEach(function (item) {
-        item.className = "form-control error"
-    })
 }
 
 function successAlert(item) {
     item.style.borderColor = "#00C22B"
-    formControl.forEach(function (item) {
-        item.className = "form-control success"
-    })
 }

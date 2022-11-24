@@ -83,7 +83,7 @@ textarea::placeholder {
     cursor: pointer;
 }
 
-.form-control {
+.alert {
     margin-bottom: 15px;
     font-size: 0.8rem;
     font-weight: 400;
@@ -91,11 +91,11 @@ textarea::placeholder {
     margin-bottom: 15px;
 }
 
-.form-control.error {
+.alert.error {
     color: #F52E2E;
     visibility: visible;
 }
 
-.form-control.success {
+.alert.success {
     visibility: hidden;
 }
